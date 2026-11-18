@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application architecture
+
+- Use TanStack Start file-based routes and small feature modules; it is the supported router/runtime for this project and keeps discovery, booking, tickets, organiser, and admin flows separately maintainable.
+- Keep demonstration bookings, attendee data, event edits, and check-in state in browser local storage only; the product brief explicitly excludes backend services and real payment processing.
